@@ -52,3 +52,58 @@ table {
 ****** Mobile Styles ***********
 ==============================*/
 
+main {
+    min-height: 100vh;
+    background: rgb(255, 0, 0);
+    background: linear-gradient(90deg, rgb(255, 0, 0) 0%, rgb(154, 154, 154) 50%, rgb(255, 0, 0) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.glass {
+    background: white;
+    min-height: 80vh;
+    width: 80%;
+    background: linear-gradient(to right bottom,
+     rgba(255, 255, 255, 0.7), 
+     rgba(255, 255, 255,0.3)
+     );
+    border-radius: 2rem;
+    z-index: 2;
+    backdrop-filter: blur(2rem);
+    text-align: center;
+
+}
+
+ .container {
+    display: grid;
+    border-radius: 2rem;
+    align-self: center;
+
+}
+img {
+    max-width: 100%;
+    cursor: pointer;
+  }
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    
+    width: calc(100% - 50px);
+    height: calc(100% - 50px);
+    padding: 25px;
+    
+    background-color: rgba(255,255,255, 0.9);
+    opacity: 0;
+    visibility: hidden;
+  }
+  .show {
+    opacity: 1;
+    visibility: visible;
+  }
