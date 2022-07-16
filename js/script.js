@@ -5,7 +5,7 @@ const img=[]
 
 for(let i=2; i<=12; i++){
     img.push(`
-    <img src="images/320/img${i}_320.jpg" alt="" data-larger="images/img${i}.jpg" data-desc="Test TEST Test">
+    <img src="images/320/img${i}_320.jpg" alt="" data-larger="images/img${i}_640.jpg" data-desc="Test TEST Test">
     `)
 }
 
